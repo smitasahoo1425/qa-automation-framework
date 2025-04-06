@@ -1,0 +1,20 @@
+{
+  "email": "dynamicuser@example.com",
+  "username": "dynamicUser456",
+  "password": "securePass123",
+  "name": {
+    "firstname": "John",
+    "lastname": "Doe"
+  },
+  "address": {
+    "city": "San Jose",
+    "street": "Main Street",
+    "number": 123,
+    "zipcode": "95131",
+    "geolocation": {
+      "lat": "37.3382",
+      "long": "-121.8863"
+    }
+  },
+  "phone": "123-456-7890"
+}
