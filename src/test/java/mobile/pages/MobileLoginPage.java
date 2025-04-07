@@ -1,4 +1,4 @@
-package pages;
+package mobile.pages;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.MobileElement;
@@ -17,7 +17,7 @@ public class MobileLoginPage {
     public void performLogin() {
         String usernameFieldId = prop.getProperty("mobile.username.id");
         String passwordFieldId = prop.getProperty("mobile.password.id");
-        String loginButtonId  = prop.getProperty("mobile.loginBtn.id");
+        String loginButtonId = prop.getProperty("mobile.loginBtn.id");
 
         driver.findElement(By.id(usernameFieldId)).sendKeys("testuser");
         driver.findElement(By.id(passwordFieldId)).sendKeys("password");
@@ -25,19 +25,14 @@ public class MobileLoginPage {
     }
 
     public void enterUsername(String username) {
-        driver.findElementById("com.example.app:id/username").sendKeys(username);
+        driver.findElementById(prop.getProperty("mobile.username.id")).sendKeys(username);
     }
 
     public void enterPassword(String password) {
-        driver.findElementById("com.example.app:id/password").sendKeys(password);
+        driver.findElementById(prop.getProperty("mobile.password.id")).sendKeys(password);
     }
 
     public void clickLogin() {
-        driver.findElementById("com.example.app:id/loginBtn").click();
+        driver.findElementById(prop.getProperty("mobile.loginBtn.id")).click();
     }
 }
-
-}
-
-
-
