@@ -9,7 +9,7 @@
     </test>
     <test name="Mobile Tests">
         <classes>
-            <class name="mobile.testCases.MobileLoginTest""/>
+            <class name="mobile.testCases.MobileLoginTest"/>
         </classes>
     </test>
     <test name="API Tests">
