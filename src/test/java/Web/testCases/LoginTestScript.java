@@ -1,6 +1,6 @@
 package testCases;
 
-import base.BaseTest;
+import base.BaseClass;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -8,7 +8,7 @@ import pages.DashboardPage;
 import pages.LoginPage;
 import com.aventstack.extentreports.Status;
 
-public class LoginTest extends BaseTest {
+public class LoginTest extends BaseClass {
 
     @Test(dataProvider = "loginData")
     public void testLogin(String username, String password, boolean shouldPass) {
