@@ -25,7 +25,11 @@ public class BaseTest {
         driver.get("https://example.com/login");
 
         // Initialize Extent Report
-        test = ExtentManager.createTest(this.getClass().getSimpleName());
+        
+        extent = new ExtentReports();
+    spark = new ExtentSparkReporter("test-output/ExtentReport.html");
+    extent.attachReporter(spark);
+    test = extent.createTest(getClass().getSimpleName());
     }
 
     @AfterClass
