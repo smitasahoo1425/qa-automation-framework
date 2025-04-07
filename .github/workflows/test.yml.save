@@ -18,11 +18,5 @@ jobs:
 
       - name: Build and Test with Maven
         run: mvn clean test
-^O
-**88
-**
-^X
-^X
-^X Exit 
-^X
+
 
